@@ -6,9 +6,9 @@ public class Main {
         BankAccount bankAccount = new BankAccount();
 
         bankAccount.setBalance(1000);
-        bankAccount.depositFunds(2500000);
-        bankAccount.withdrawFunds(200000);
-        bankAccount.withdrawFunds(200000);
+        bankAccount.depositFunds(250000000);
+        bankAccount.withdrawFunds(200);
+        bankAccount.withdrawFunds(200);
 
         bankAccount.setAccountNumber(1234567890);
         bankAccount.setEmail("iyok@email.com");
