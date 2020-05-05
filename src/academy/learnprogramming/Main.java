@@ -27,12 +27,31 @@ public class Main {
 //        BankAccount pramAccount = new BankAccount("Pram","pram@email.com","0811775880");
 //        System.out.println(pramAccount.getAccountNumber() + " name " + pramAccount.getName());
 
-        VipCustomer vipCustomer = new VipCustomer("VIP Joel",100000,
-                "vipjoel@email.com");
+        VipCustomer defaultVipCustomer = new VipCustomer();
 
-        System.out.println(vipCustomer.getName());
-        System.out.println(vipCustomer.getCreditLimit());
-        System.out.println(vipCustomer.getEmailAddress());
+        System.out.println(defaultVipCustomer.getName());
+        System.out.println(defaultVipCustomer.getCreditLimit());
+        System.out.println(defaultVipCustomer.getEmailAddress());
+
+        VipCustomer updatedVipCustomer = new VipCustomer("NewVip1",
+                "newemail1@email.com");
+
+        System.out.println(updatedVipCustomer.getName());
+        System.out.println(updatedVipCustomer.getCreditLimit());
+        System.out.println(updatedVipCustomer.getEmailAddress());
+
+        VipCustomer thirdVipCustomer = new VipCustomer("ThirdVip",
+                3000000,"third@email.com");
+        System.out.println(thirdVipCustomer.getName());
+        System.out.println(thirdVipCustomer.getCreditLimit());
+        System.out.println(thirdVipCustomer.getEmailAddress());
+
+//        VipCustomer vipCustomer = new VipCustomer("VIP Joel",100000,
+//                "vipjoel@email.com");
+//
+//        System.out.println(vipCustomer.getName());
+//        System.out.println(vipCustomer.getCreditLimit());
+//        System.out.println(vipCustomer.getEmailAddress());
 
         
 

@@ -13,9 +13,9 @@ public class VipCustomer {
     }
 
     public VipCustomer(String name, String emailAddress) {
-        System.out.println("VIP Customer name= " + name);
-        System.out.println("VIP Customer email= " + emailAddress);
-        this.creditLimit = getCreditLimit();
+        this.name = name;
+        this.emailAddress = emailAddress;
+        this.creditLimit = 2000000;
     }
 
     public VipCustomer(String name, int creditLimit, String emailAddress) {
