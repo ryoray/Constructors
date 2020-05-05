@@ -10,12 +10,22 @@ public class BankAccount {
     // More efficient way to set initial value of the fields
     // is by using constructors
 
-    public BankAccount(String accountNumber, double balance, String name, String email, String phone) {
+    public BankAccount(){
+        this("123456", 2500,"Suryo",
+                "suryo@email.com","(245)1234567");
+    }
+
+    public BankAccount(String accountNumber, double balance,
+                       String name, String email, String phone) {
         this.accountNumber = accountNumber;
         this.balance = balance;
         this.name = name;
         this.email = email;
         this.phone = phone;
+    }
+
+    public BankAccount(String name, String email, String phone) {
+        this("99999",1000,name,email,phone);
     }
 
     public String getAccountNumber() {
@@ -67,7 +77,6 @@ public class BankAccount {
             System.out.println("There's only " + this.balance + " balance available");
         } else {
             this.balance -= amount;
-            System.out.println("Balance = " + this.balance);
         }
     }
 }
