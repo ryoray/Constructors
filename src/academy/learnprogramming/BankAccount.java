@@ -1,17 +1,28 @@
 package academy.learnprogramming;
 
 public class BankAccount {
-    private int accountNumber;
+    private String accountNumber;
     private double balance;
     private String name;
     private String email;
     private String phone;
 
-    public int getAccountNumber() {
+    // More efficient way to set initial value of the fields
+    // is by using constructors
+
+    public BankAccount(String accountNumber, double balance, String name, String email, String phone) {
+        this.accountNumber = accountNumber;
+        this.balance = balance;
+        this.name = name;
+        this.email = email;
+        this.phone = phone;
+    }
+
+    public String getAccountNumber() {
         return accountNumber;
     }
 
-    public void setAccountNumber(int accountNumber) {
+    public void setAccountNumber(String accountNumber) {
         this.accountNumber = accountNumber;
     }
 
