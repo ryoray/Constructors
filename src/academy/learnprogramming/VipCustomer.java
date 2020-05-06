@@ -7,15 +7,17 @@ public class VipCustomer {
     private String emailAddress;
 
     public VipCustomer() {
-        this.name = "Default name";
-        this.creditLimit = 100000;
-        this.emailAddress = "default@email.com";
+        // First way to initialize value into the fiels
+        this("Default name", 1000000,"default@email.com");
+
+//        The other way for value initialization
+//        this.name = "Default name";
+//        this.creditLimit = 100000;
+//        this.emailAddress = "default@email.com";
     }
 
     public VipCustomer(String name, String emailAddress) {
-        this.name = name;
-        this.emailAddress = emailAddress;
-        this.creditLimit = 2000000;
+       this(name, 2000000, emailAddress);   // Adding default value for credit limit only
     }
 
     public VipCustomer(String name, int creditLimit, String emailAddress) {
